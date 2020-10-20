@@ -39,4 +39,4 @@ if (etaUtente<18) {
 
 // OUTPUT: prezzo finale
 
-document.getElementById('titolo').innerHTML="Il prezzo del tuo biglietto è: " + prezzoFinale;
+document.getElementById('titolo').innerHTML="Il prezzo del tuo biglietto è: " + prezzoFinale.toFixed(2);
