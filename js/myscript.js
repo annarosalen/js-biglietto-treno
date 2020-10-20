@@ -26,9 +26,9 @@ if (etaUtente<18) {
 }else if (etaUtente>65) {
   // sconto del 40%
   prezzoFinale=((prezzoalkm * kmUtente)*(60/100));
-  console.log (prezzoalkm * kmUtente)*(60/100);
+  console.log ((prezzoalkm * kmUtente)*(60/100));
   // se età utente tra i 18 e i 65 (100%)
-}else (etaUtente>=18)&&(etaUtente<=65) {
+}else {
   // prezzo pieno
   prezzoFinale = (prezzoalkm * kmUtente);
   console.log (prezzoalkm * kmUtente);
