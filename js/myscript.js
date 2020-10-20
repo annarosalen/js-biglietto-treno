@@ -1,8 +1,9 @@
 // ESERCIZIO: calcolo del prezzo del biglietto del treno
 // Il programma dovrà chiedere all’utente il numero di chilometri che vuole percorrere e l’età del passeggero.
 
-var prezzoalKm = 0.21;
 
+var prezzoalkm = 0.21;
+var prezzoFinale;
 // input: utente inserisce età
 var etaUtente = parseInt(prompt("Inserisci la tua età"));
 
@@ -19,19 +20,23 @@ console.log("km da percorrere", kmUtente);
 //se l'utente è minorenne (80%)
 if (etaUtente<18) {
   // 20% di sconto
-  console.log ((prezzoalKm * kmUtente)*(80/100));
+  prezzoFinale=((prezzoalkm * kmUtente)*(80/100));
+  console.log((prezzoalkm * kmUtente)*(80/100));
   // se utente è over 65  (60%)
-}else if (etaUtente>65){
+}else if (etaUtente>65) {
   // sconto del 40%
-  console.log ((prezzoalKm * kmUtente)*(60/100));
+  prezzoFinale=((prezzoalkm * kmUtente)*(60/100));
+  console.log (prezzoalkm * kmUtente)*(60/100);
   // se età utente tra i 18 e i 65 (100%)
-}else (etaUtente>=18)&&(etaUtente<=65)
+}else (etaUtente>=18)&&(etaUtente<=65) {
   // prezzo pieno
-  console.log (prezzoalKm * kmUtente);
-
-
+  prezzoFinale = (prezzoalkm * kmUtente);
+  console.log (prezzoalkm * kmUtente);
+}
 
 
 
 
 // OUTPUT: prezzo finale
+
+document.getElementById('titolo').innerHTML="Il prezzo del tuo biglietto è: " + prezzoFinale;
