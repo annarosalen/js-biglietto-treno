@@ -22,11 +22,13 @@ if (etaUtente<18) {
   // 20% di sconto
   prezzoFinale=((prezzoalkm * kmUtente)*(80/100));
   console.log((prezzoalkm * kmUtente)*(80/100));
+
   // se utente è over 65  (60%)
 }else if (etaUtente>65) {
   // sconto del 40%
   prezzoFinale=((prezzoalkm * kmUtente)*(60/100));
   console.log ((prezzoalkm * kmUtente)*(60/100));
+
   // se età utente tra i 18 e i 65 (100%)
 }else {
   // prezzo pieno
@@ -39,4 +41,4 @@ if (etaUtente<18) {
 
 // OUTPUT: prezzo finale
 
-document.getElementById('titolo').innerHTML="Il prezzo del tuo biglietto è: " + prezzoFinale.toFixed(2);
+document.getElementById('titolo').innerHTML="Il prezzo del tuo biglietto del treno è: " + prezzoFinale.toFixed(2);
